@@ -86,8 +86,8 @@ We used **MCMC (Markov Chain Monte Carlo)** with the `emcee` package to find the
 We used flat priors to keep walkers within physically reasonable bounds:
  
 ```
-−0.1  < t0    < 0.1   days
- 0.05 < Rp/Rs < 0.25
+−2  < t0    < 2   days
+ 0 < Rp/Rs < 1
  ```
 The sampler ran in two phases — 300 burn-in steps (discarded) to let walkers find the best region, followed by 1000 production steps used for the final results (32,000 total samples).
 
